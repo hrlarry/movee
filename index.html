@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Movee | Welcome</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="public/css/bootstrap.css" rel="stylesheet">
+	<link href="public/css/defaultCSS.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic' rel='stylesheet' type='text/css'>      
+</head>
+
+<body>
+	<center>
+	<img src="Movee logo transparent.png"></img>
+
+	<div class="box">
+		<h2 style="line-height: 15px;">Login now.</h2>
+
+		<p style="width=600px">Movee provides elderly individuals with an engaging, interactive virtual environment for a more rewarding exercise experience! Family members near and far can improve the experience by uploading packages to unlock after achieving certain health milestones.</p>
+		<p>To get started, just log in here!</p>
+
+		<form id="loginForm" role="form" method="get" action="/profilepage">
+		    <div class="form-group">
+		      <label for="username">Username:</label>
+		      <input type="text" class="form-control" id="usernameField" placeholder="Username" name="username">
+		      <p id="verifyUsername"></p>
+		    </div>
+		    <div class="form-group">
+		      <label for="username">Password:</label>
+		      <input type="password" class="form-control" id="password" placeholder="Password">
+		    </div>
+		</form>
+
+		<a href="home.html" id="loginBtn" class="btn btn-success btn-block btn-lg">Login</a>
+
+		<hr>
+		<p>Don't have an account yet? Sign up here!</p>
+
+		<button type="button" class="btn btn-default btn-block" data-toggle="modal" data-target="#signupModal">Sign up now.</button>
+
+		<!--Modal for signing up-->
+		<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  		<div class="modal-dialog">
+	    		<div class="modal-content">
+	      			<div class="modal-header">
+	        			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        			<h3>Join now.</h3>
+	      			</div>
+	      			<div class="modal-body">
+	      				<p>Just fill out this </p>
+	      				<form id="makeProfileForm" role="form" method="get" action="/profilepage">
+						    <div class="form-group">
+						      <label for="newUsername">Username:</label>
+						      <input type="text" class="form-control" id="username" placeholder="Username">
+						    </div>
+						    <!-- still need the appearance of a password field -->
+						    <div class="form-group">
+						      <label for="password">Password:</label>
+						      <input type="password" class="form-control" id="password" placeholder="Password">
+						    </div>
+
+						    <div class="form-group">
+						      <label for="newEmail">Email address:</label>
+						      <input type="text" class="form-control" id="email" placeholder="Email address">
+						    </div>
+
+						    <div class="form-group">
+						      <label for="newPhone">Phone number:</label>
+						      <input type="text" class="form-control" id="phone" placeholder="Phone number">
+						    </div>
+						</form>
+	            	</div>
+	      			<div class="modal-footer">
+	        			<button id="makeProfileBtn" type="button" class="btn btn-success btn-block btn-lg">Create Account</button>
+	        			<br>
+	        			<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+	      			</div>
+	    		</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<script src="public/js/jquery-1.11.0.js"></script>
+	<script src="public/js/bootstrap.js"></script>
+</body>
+</html>

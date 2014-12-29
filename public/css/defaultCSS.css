@@ -1,0 +1,100 @@
+h1, h2, h3, h4, h5 {
+     color: #8382BF;
+     font-family: Arial Rounded MT Bold;
+}
+
+html {
+     height: 100%;
+}
+
+body {
+     font-family: "Source Sans Pro", "Arial", sans-serif;
+     font-size: 16px;
+     color: #000000;
+     background-color: #c4ffe8;
+}
+
+/* to ensure the textarea in /editExhibit fills the page */
+textarea {
+     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+     box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+input {
+     width: 100%;
+}
+
+.box {
+     background-color:rgba(255,255,255,.8);
+     padding: 10px 10px 10px 10px;
+     width: 600px;
+}
+
+.img_upload {
+     border: 1px solid;
+     border-color: #c0c0c0;
+     cursor: pointer;
+     border-radius: 5px;
+}
+
+.modal {
+    overflow-y: auto;    /*removes scrollbar from appearing when unnecessary*/
+}
+
+
+#backgroundSplash {
+     
+}
+
+.exhibitCanvas{
+     background-color: #ffffff;
+     box-shadow: 2px 2px 10px #888888;
+     position: relative;
+     top: 30px;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+#exhibitDescription{
+     width: 50px;
+     height: 50px;
+}
+
+.exhibitImage{
+     background-color: #ffffff;
+     display: block;
+     position:relative;
+     margin-left: auto;
+     margin-right: auto;
+     top: 15px;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     max-width: 90%;
+     max-height: 90%;
+     height: auto;
+     width: auto;
+     border:5px solid #ffffff;
+     box-shadow: 2px 2px 10px #888888;
+}
+
+.gallerythumbnail {
+     min-width:85px;
+     width:85px;
+     height:auto;
+     max-height:85px;
+     margin-bottom:0px;
+}
+
+#logo {
+     position:relative;
+     top: 10px;
+     width:200px;
+}
+
+#navigationWrapper {
+     position: fixed;
+     background-color: transparent;
+     margin: 0 auto;
+}
